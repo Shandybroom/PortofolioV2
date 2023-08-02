@@ -1,20 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}", "*.html",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
+        raleway: ['Raleway']
       },
       colors: {
-        primary: '#030504',
-        secondary: '#19E5B0'
+        background: '#090608',
+        primary: '#19E5B0',
+        secondary: '#374151'
       },
-      backgroundPosition: {
-        'bottom-custom' : 'top 21rem'
+      backgroundImage: {
+        'footer': "url('/src/img/footer.svg')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
