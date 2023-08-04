@@ -5,6 +5,9 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+    container: {
+     
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins'],
@@ -13,10 +16,10 @@ module.exports = {
       colors: {
         background: '#090608',
         primary: '#19E5B0',
-        secondary: '#374151'
+        secondary: '#BD99FF'
       },
       backgroundImage: {
-        'footer': "url('/src/img/footer.svg')",
+        'footer': "url('./src/img/rain.svg')",
       }
     },
   },
